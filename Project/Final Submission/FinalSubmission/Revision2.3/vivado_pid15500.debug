@@ -1,0 +1,83 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.2 (64-bit)
+# SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Current time: Thu Dec 08 01:19:32 MST 2022
+# Process ID (PID): 15500
+# User: Zachary Montoya
+# OS: Windows 10
+# Project: Revision2.3
+# Part: Zybo Z7-10 (xc7z010clg400-1)
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Thu Dec 08 01:19:32 MST 2022
+java.lang.NullPointerException
+	at java.base/java.util.TreeMap.fixAfterInsertion(TreeMap.java:2292)
+	at java.base/java.util.TreeMap.put(TreeMap.java:580)
+	at ui.h.c.f.d(SourceFile:213)
+	at ui.h.c.f.c(SourceFile:192)
+	at ui.h.c.f.insertUpdate(SourceFile:81)
+	at java.desktop/javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:203)
+	at com.jidesoft.editor.SyntaxDocument.fireInsertUpdate(Unknown Source)
+	at java.desktop/javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:757)
+	at java.desktop/javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:716)
+	at java.desktop/javax.swing.text.PlainDocument.insertString(PlainDocument.java:131)
+	at com.jidesoft.editor.CodeEditor.append(Unknown Source)
+	at ui.views.m.p.print(SourceFile:64)
+	at ui.data.experiment.S.cAg(SourceFile:269)
+	at ui.data.experiment.S.tX(SourceFile:205)
+	at ui.data.experiment.S.cAf(SourceFile:189)
+	at ui.data.experiment.S.<init>(SourceFile:107)
+	at ui.views.m.o.a(SourceFile:325)
+	at ui.views.m.o.<init>(SourceFile:90)
+	at ui.views.m.D.a(SourceFile:207)
+	at ui.views.m.D.a(SourceFile:192)
+	at ui.views.m.D.a(SourceFile:139)
+	at ui.views.m.D.a(SourceFile:108)
+	at ui.views.m.D.iXs(SourceFile:265)
+	at ui.views.m.D.handleTclEvent(SourceFile:460)
+	at ui.frmwork.a.o.c(SourceFile:42)
+	at ui.frmwork.E.i(SourceFile:253)
+	at ui.frmwork.E.dQ(SourceFile:336)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.desktop/java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1070)
+	at java.desktop/java.awt.Component.show(Component.java:1716)
+	at java.desktop/java.awt.Component.setVisible(Component.java:1663)
+	at java.desktop/java.awt.Window.setVisible(Window.java:1031)
+	at java.desktop/java.awt.Dialog.setVisible(Dialog.java:1005)
+	at ui.dlg.c.g.setVisible(SourceFile:864)
+	at ui.dlg.c.bz.bIi(SourceFile:595)
+	at ui.dlg.c.bI.aLU(SourceFile:1185)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
