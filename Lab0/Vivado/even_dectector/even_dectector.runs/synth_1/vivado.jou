@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 19 20:44:13 2022
+# Process ID: 5105
+# Current directory: /home/zacharymontoya/Desktop/Lab0/Vivado/even_dectector/even_dectector.runs/synth_1
+# Command line: vivado -log even_detector.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source even_detector.tcl
+# Log file: /home/zacharymontoya/Desktop/Lab0/Vivado/even_dectector/even_dectector.runs/synth_1/even_detector.vds
+# Journal file: /home/zacharymontoya/Desktop/Lab0/Vivado/even_dectector/even_dectector.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source even_detector.tcl -notrace
