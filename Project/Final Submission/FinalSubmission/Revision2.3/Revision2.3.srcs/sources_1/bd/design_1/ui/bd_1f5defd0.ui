@@ -1,0 +1,58 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.592377",
+   "Default View_TopLeft":"-751,-73",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port hdmi_out -pg 1 -lvl 7 -x 2030 -y 250 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2030 -y 470 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2030 -y 630 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -20 -y 140 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -20 -y 200 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -20 -y 0 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 6 -x 1880 -y 250 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 520 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 930 -y 340 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 1640 -y 110 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 930 -y 540 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 320 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 230 -y 330 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1640 -y 550 -defaultsOSRD
+preplace inst Top_0 -pg 1 -lvl 4 -x 1290 -y 170 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_fast 1 3 3 1100J 320 NJ 320 N
+preplace netloc clk_wiz_0_clk_slow 1 3 3 1070 20 1530 300 NJ
+preplace netloc xlconcat_0_dout 1 5 1 1740 200n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 10 230 450 450 780
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 0 220 430
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 480 440 790J
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 1 1 470 300n
+preplace netloc reset_1 1 0 4 NJ 140 NJ 140 NJ 140 NJ
+preplace netloc axi_gpio_0_gpio2_io_o 1 3 1 1080 160n
+preplace netloc Top_0_GPIO_Outs 1 3 2 NJ 330 1480
+preplace netloc blk_mem_gen_0_douta 1 3 2 1100 10 1540
+preplace netloc Top_0_PNL_BRAM_din 1 4 1 N 120
+preplace netloc Top_0_PNL_BRAM_addr 1 4 1 1520 80n
+preplace netloc Top_0_PNL_BRAM_we 1 4 1 1520 140n
+preplace netloc Top_0_hdmi_red 1 4 1 1510 160n
+preplace netloc Top_0_hdmi_green 1 4 1 1500 180n
+preplace netloc Top_0_hdmi_blue 1 4 1 1490 200n
+preplace netloc Top_0_hdmi_hsync 1 4 2 N 220 NJ
+preplace netloc Top_0_hdmi_vsync 1 4 2 N 240 NJ
+preplace netloc Top_0_hdmi_enable 1 4 2 N 260 NJ
+preplace netloc btn_1 1 0 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc sw_1 1 0 4 NJ 0 N 0 N 0 1090
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 460 260n
+preplace netloc processing_system7_0_FIXED_IO 1 1 6 440J 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ
+preplace netloc processing_system7_0_DDR 1 1 6 NJ 470 NJ 470 NJ 470 NJ 470 NJ 470 NJ
+preplace netloc rgb2dvi_0_TMDS 1 6 1 NJ 250
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 320
+levelinfo -pg 1 -20 230 630 930 1290 1640 1880 2030
+pagesize -pg 1 -db -bbox -sgen -120 -20 2150 650
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}
