@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ZachsEntityName'
+ERROR: [VRFC 10-2989] 'condselector' is not declared [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:8]
+ERROR: [VRFC 10-4982] syntax error near ':' [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:8]
+ERROR: [VRFC 10-3287] entity 'zachsentityname' is not yet compiled [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:16]
+ERROR: [VRFC 10-4982] syntax error near '=' [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:22]
+ERROR: [VRFC 10-2989] 'answer' is not declared [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:26]
+ERROR: [VRFC 10-2989] 'condselector' is not declared [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:30]
+ERROR: [VRFC 10-2989] 'condselector' is not declared [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:29]
+ERROR: [VRFC 10-1449] this construct is only supported in VHDL 1076-2008 [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:29]
+ERROR: [VRFC 10-2989] 'control' is not declared [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:24]
+ERROR: [VRFC 10-1353] sensitivity list can have only static signal name [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:19]
+ERROR: [VRFC 10-2989] 'a' is not declared [/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd:19]
+INFO: [VRFC 10-3070] VHDL file '/home/zacharymontoya/Desktop/Labs/Lab2/Lab2PartB.vhd' ignored due to errors
