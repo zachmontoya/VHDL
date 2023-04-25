@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 24 07:35:30 2022
+# Process ID: 9396
+# Current directory: /home/zacharymontoya/Desktop/Labs/Lab5/lab5b/lab5b.runs/synth_1
+# Command line: vivado -log PartB_ParentModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PartB_ParentModule.tcl
+# Log file: /home/zacharymontoya/Desktop/Labs/Lab5/lab5b/lab5b.runs/synth_1/PartB_ParentModule.vds
+# Journal file: /home/zacharymontoya/Desktop/Labs/Lab5/lab5b/lab5b.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source PartB_ParentModule.tcl -notrace
+Command: synth_design -top PartB_ParentModule -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9426
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2301.289 ; gain = 0.000 ; free physical = 116 ; free virtual = 4994
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PartB_ParentModule' [/home/zacharymontoya/Desktop/Labs/Lab5/lab5b.vhdl:10]
+INFO: [Synth 8-3491] module 'seq_mult' declared at '/home/zacharymontoya/Desktop/Labs/Lab5/lab5a.vhdl:4' bound to instance 'PartA_Multipler' of component 'seq_mult' [/home/zacharymontoya/Desktop/Labs/Lab5/lab5b.vhdl:26]
+INFO: [Synth 8-638] synthesizing module 'seq_mult' [/home/zacharymontoya/Desktop/Labs/Lab5/lab5a.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'seq_mult' (1#1) [/home/zacharymontoya/Desktop/Labs/Lab5/lab5a.vhdl:13]
+WARNING: [Synth 8-614] signal 'ready' is read in the process but is not in the sensitivity list [/home/zacharymontoya/Desktop/Labs/Lab5/lab5b.vhdl:41]
+INFO: [Synth 8-256] done synthesizing module 'PartB_ParentModule' (2#1) [/home/zacharymontoya/Desktop/Labs/Lab5/lab5b.vhdl:10]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2301.289 ; gain = 0.000 ; free physical = 921 ; free virtual = 5776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2301.289 ; gain = 0.000 ; free physical = 922 ; free virtual = 5776
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 922 ; free virtual = 5776
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'seq_mult'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                     ab0 |                               01 |                               01
+                    load |                               10 |                               10
+                      op |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'seq_mult'
+WARNING: [Synth 8-327] inferring latch for variable 'start_reg' [/home/zacharymontoya/Desktop/Labs/Lab5/lab5b.vhdl:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 905 ; free virtual = 5760
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 686 ; free virtual = 5543
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 686 ; free virtual = 5543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.316 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2307.324 ; gain = 6.027 ; free physical = 684 ; free virtual = 5541
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2307.324 ; gain = 0.000 ; free physical = 780 ; free virtual = 5637
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2307.324 ; gain = 0.000 ; free physical = 697 ; free virtual = 5554
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 2307.324 ; gain = 6.035 ; free physical = 832 ; free virtual = 5689
+INFO: [Common 17-1381] The checkpoint '/home/zacharymontoya/Desktop/Labs/Lab5/lab5b/lab5b.runs/synth_1/PartB_ParentModule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PartB_ParentModule_utilization_synth.rpt -pb PartB_ParentModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 24 07:36:01 2022...
