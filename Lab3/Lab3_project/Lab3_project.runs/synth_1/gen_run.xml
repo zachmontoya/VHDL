@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1665549124">
+  <File Type="VDS-TIMING-PB" Name="Lab3Ent_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Lab3Ent_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Lab3Ent.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Lab3Ent_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Lab3Ent_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Lab3Ent_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="Lab3Ent.vds"/>
+  <File Type="REPORTS-TCL" Name="Lab3Ent_reports.tcl"/>
+  <File Type="PA-TCL" Name="Lab3Ent.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Lab3b.vhdl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Lab3Ent"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
