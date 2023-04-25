@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.532563",
+   "Default View_TopLeft":"0,-135",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1790 -y 350 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1790 -y 370 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 400 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 920 -y 230 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 610 -y 210 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 230 -y 210 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -x 1660 -y 110 -defaultsOSRD
+preplace inst Top_0 -pg 1 -lvl 4 -x 1310 -y 230 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 20 100 440 330 760 140 1090 100 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 30 110 460 90 NJ 90 1080J
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 430 340 770J
+preplace netloc Top_0_GPIO_Outs 1 3 2 1070J 130 1520
+preplace netloc axi_gpio_0_gpio2_io_o 1 3 1 N 260
+preplace netloc Top_0_BRAM_PORTA_addr 1 4 1 1530 80n
+preplace netloc Top_0_BRAM_PORTA_dout 1 4 1 1540 120n
+preplace netloc blk_mem_gen_0_douta 1 3 2 1100 140 N
+preplace netloc Top_0_BRAM_PORTA_we 1 4 1 1550 160n
+preplace netloc processing_system7_0_DDR 1 1 5 NJ 350 NJ 350 NJ 350 NJ 350 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 370 NJ 370 NJ 370 NJ 370 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450 150n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 210
+levelinfo -pg 1 0 230 610 920 1310 1660 1790
+pagesize -pg 1 -db -bbox -sgen 0 0 1910 510
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}
